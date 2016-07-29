@@ -209,11 +209,17 @@ types:
       description: Login with email and password
       body:
         application/json:
-          example: |
-            {
-              "email": "john@example.com",
-              "password": "super_secret"
-            }
+          examples:
+            first: |
+              {
+                "email": "john@example.com",
+                "password": "super_secret"
+              }
+            second: |
+              {
+                "email": "david@example.com",
+                "password": "super_secret"
+              }
       responses:
         200:
           description: Login was correct
